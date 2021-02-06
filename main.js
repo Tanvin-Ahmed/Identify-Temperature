@@ -7,7 +7,7 @@ const environment = document.querySelector('.lead');
 // click submit button
 document.getElementById('submit').addEventListener('click', () => {
     // API call
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=' + city.value + '&appid=101b8db392cedcff93fd559f5587be4a&units=metric')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city.value + '&appid=101b8db392cedcff93fd559f5587be4a&units=metric')
         .then(response => response.json())
         .then(data => {
             // API data collection
